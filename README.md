@@ -50,7 +50,7 @@ Primero ejecutar el archivo "start.py"
 python start.py
 ```
 
-Luego, ejecutar el archivo "gui.py"
+Luego, ejecutar el archivo "gui.py (dentro del src -> src/app/gui.py)"
 
 ```
 python gui.py
