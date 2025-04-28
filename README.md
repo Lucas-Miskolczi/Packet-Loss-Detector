@@ -14,8 +14,6 @@ git clone <https://github.com/Lucas-Miskolczi/Packet-Loss-Detector.git>
 cd Packet-Loss-Detector
 ```
 
-Instalar dependencias:
-
 2. Uso de entorno virtual **(venv - opcional)**:
 
 ```
@@ -25,7 +23,7 @@ source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 ```
 
-3. Luego instalar las librerías:
+3. Luego instalar las librerías/dependencias:
 
 ```
 pip install -r requirements.txt
