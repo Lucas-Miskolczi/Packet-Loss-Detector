@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+
+# Environments
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Docker
+*.db
+*.pid

@@ -1,0 +1,9 @@
+scapy
+sqlalchemy
+psycopg2-binary
+fastapi
+uvicorn
+pydantic
+dearpygui
+python-dotenv
+requests
