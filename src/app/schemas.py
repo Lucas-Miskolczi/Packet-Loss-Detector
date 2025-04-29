@@ -15,4 +15,4 @@ class PacketRead(PacketBase):
     timestamp: datetime
 
     class Config:
-        orm_mode = True ### ORM mode to read from SQLAlchemy models ###
+        from_attributes = True ### ORM mode to read from SQLAlchemy models ###
