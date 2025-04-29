@@ -2,6 +2,7 @@ import sys
 import threading
 import signal
 from app.sniffer.sniffer import start_sniffing
+from app.database import init_db
 import uvicorn
 import platform
 from scapy.all import get_if_list, get_if_addr
@@ -71,6 +72,8 @@ def select_interface():
 
 if __name__ == "__main__":
     signal.signal(signal.SIGINT, stop_gracefully)
+
+    init_db()
 
     # interface = "Ethernet"  ### -> Local Testing ###
 

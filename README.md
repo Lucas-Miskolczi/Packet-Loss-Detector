@@ -4,6 +4,16 @@ Este programa captura paquetes de una red, almacena la información en una base 
 
 ---
 
+## Requisitos Necesarios Previo a Utilizar el Programa:
+
+* Python 3.8 o superior
+
+* Acceso de administrador/root para capturar paquetes de red
+
+* PostgreSQL funcionando
+
+* Si esta usando Windows, debe descargar NPCAP con la opcion de "Install Npcap in WinPcap API-compatible Mode" (https://npcap.com/#download)
+
 ## Instalación y Uso
 
 1. **Descargar o clonar** el proyecto:
@@ -50,7 +60,7 @@ Primero ejecutar el archivo "start.py"
 python start.py
 ```
 
-Luego, ejecutar el archivo "gui.py (dentro del src -> src/app/gui.py)"
+Luego, ejecutar el archivo "gui.py" (dentro del src -> src/app/gui.py)
 
 ```
 python gui.py
@@ -72,10 +82,3 @@ API_URL resuelve automaticamente a localhost:8000 ; En caso de usar otro puerto 
 API_URL = "http://127.0.0.1:8000"
 ```
 
-## Requisitos
-
-* Python 3.8 o superior
-
-* Acceso de administrador/root para capturar paquetes de red
-
-* PostgreSQL funcionando
