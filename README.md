@@ -60,7 +60,7 @@ Primero ejecutar el archivo "start.py"
 python start.py
 ```
 
-Luego, ejecutar el archivo "gui.py" (dentro del src -> src/app/gui.py)
+Luego, ejecutar el archivo "gui.py" (dentro del src/app -> src/app/gui.py)
 
 ```
 python gui.py
@@ -76,9 +76,15 @@ Si no se selecciona la red correcta, puede reemplazar la linea siguiente con el 
 ("ethernet" in iface_name or "wi-fi" in iface_name)
 ```
 
-API_URL resuelve automaticamente a localhost:8000 ; En caso de usar otro puerto o IP, reemplace la linea siguiente con la API_URL (Line 6, gui.py)
+API_URL resuelve automaticamente a localhost:8000 ; En caso de usar otro puerto o IP, reemplace la linea siguiente con la API_URL (Line 6, app/gui.py)
 
 ```
 API_URL = "http://127.0.0.1:8000"
 ```
 
+No es necesario tener creada una base de datos, si no lo tiene se creara una con el nombre que se definio en el .env (POSTGRES_DB).
+No eliminar la base por defecto de postgres. En caso de querer hacerlo, reemplace la siguiente linea con su base (Line 17, database.py)
+
+```
+dbname="postgres"
+```

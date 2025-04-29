@@ -12,9 +12,9 @@ Using psycopg2 -> Low-level lib for PostgreSQL -> Works well with Docker
 def create_database_if_not_exists():
     """Create the database if it does not exist."""
     try:
-        # Connect to default 'postgres' database to check/create another DB
+        """ Connect to default 'postgres' database to check/create another DB """
         conn = psycopg2.connect(
-            dbname="postgres",  # not POSTGRES_DB (we're trying to create that one)
+            dbname="postgres",  ### not POSTGRES_DB (we're trying to create that one), this is used as initial connection to than tack on a the POSTGRES_DB creation ###
             user=POSTGRES_USER,
             password=POSTGRES_PASSWORD,
             host=POSTGRES_HOST,
